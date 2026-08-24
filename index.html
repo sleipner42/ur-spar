@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UR Spår – längdspår och spårstatus</title>
+<meta name="description" content="UR Spår visar längdskidspår och färsk spårstatus. Pilotområde Stockholm.">
+<style>
+  :root { --bg:#0B1B2B; --card:#122B3F; --accent:#00A3E0; --body:#B7C3CE; --muted:#8A95A0; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--body);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; }
+  .wrap { max-width:720px; margin:0 auto; padding:64px 20px 80px; }
+  h1 { color:#fff; font-size:40px; line-height:1.15; margin:0 0 12px; letter-spacing:-0.5px; }
+  .lede { font-size:19px; color:#D3DCE4; margin:0 0 32px; }
+  .card { background:var(--card); border-radius:14px; padding:20px; margin:14px 0; }
+  .card h2 { color:#fff; font-size:17px; margin:0 0 8px; }
+  .card p { margin:0; font-size:15px; }
+  .status { display:inline-block; background:#0E4C63; color:#7FD8F5; font-size:12px;
+    font-weight:700; padding:4px 10px; border-radius:6px; margin-bottom:20px; }
+  a { color:var(--accent); }
+  footer { margin-top:48px; color:#6B7783; font-size:12px; line-height:1.7; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <span class="status">UNDER UTVECKLING</span>
+  <h1>UR Spår</h1>
+  <p class="lede">
+    Längdskidspår och färsk spårstatus i en app. Se vilka spår som faktiskt är
+    nypreparerade — inte vad som stod på en anslagstavla i förrgår.
+  </p>
+
+  <div class="card">
+    <h2>Spårstatus per sträcka</h2>
+    <p>
+      Färgen på kartan visar hur färsk prepareringen är på just den sträckan, inte
+      för en hel anläggning. Rapporter från verifierade spårmaskinister väger tyngre
+      än en förbipasserande gissning, och varje status visar hur gammal den är.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>För spårmaskinister och klubbar</h2>
+    <p>
+      Preparera med telefonen i fickan och statusen uppdateras av sig själv. Gratis,
+      och ersätter manuella statusinlägg. Prepareringen krediteras klubben, aldrig
+      en enskild person.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Integritet från början</h2>
+    <p>
+      Du kan titta på spår helt utan konto. Loggade turer är privata som standard,
+      och varje GPS-spår klipps ca 200 meter i båda ändarna innan det sparas — det
+      börjar alltså aldrig vid din dörr.
+      <a href="/privacy/">Läs integritetspolicyn</a>.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Pilotområde: Stockholm</h2>
+    <p>
+      Vi startar med 48 spår i Stockholms län, hämtade från OpenStreetMap.
+    </p>
+  </div>
+
+  <footer>
+    <p>
+      Spårgeometri © OpenStreetMap contributors, tillgänglig under Open Database
+      License (ODbL). Kartbilder från OpenFreeMap.
+    </p>
+    <p><a href="/privacy/">Integritetspolicy / Privacy notice</a></p>
+  </footer>
+</div>
+</body>
+</html>
