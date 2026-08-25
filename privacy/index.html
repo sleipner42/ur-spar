@@ -30,7 +30,7 @@
 <div class="wrap">
 <header><a href="../">&larr; UR Spår</a></header>
 <h1>UR Spår — Integritetspolicy / Privacy notice</h1>
-<p><strong>Version 1.0 — senast uppdaterad / last updated: 2026-08-24</strong></p>
+<p><strong>Version 1.0 — senast uppdaterad / last updated: 2026-08-25</strong></p>
 <p>The Swedish text comes first because the pilot region is Stockholm. The English text below it says the same thing.</p>
 <hr>
 <h1>Svenska</h1>
@@ -38,7 +38,7 @@
 <ul>
 <li>Du kan titta på spår och spårstatus <strong>utan konto</strong>. Vi sparar då ingenting om dig.</li>
 <li>Loggar du en tur sparas den som <strong>privat</strong> som standard. Du väljer själv privat, följare eller publik när du sparar.</li>
-<li>Av varje inspelat GPS-spår klipps ca <strong>200 meter bort i båda ändarna innan det sparas</strong>. Ett spår börjar och slutar därför aldrig på din exakta position. Detta gäller alltid, även för privata turer.</li>
+<li>Av varje inspelat GPS-spår klipps som standard ca <strong>200 meter bort i båda ändarna innan det sparas</strong>. Ett spår varken börjar eller slutar därför på din exakta position. Du väljer själv avståndet under Inställningar (av, 200, 500 eller 1000 meter), och det du väljer gäller likadant för privata och publika turer. Stänger du av skyddszonen sparas spåret precis som det spelades in.</li>
 <li><strong>Spårrapporter är alltid publika och går inte att redigera i efterhand.</strong> En position som följer med en rapport avrundas till ca 100 meter.</li>
 <li><strong>Ingen reklam, ingen analysmjukvara, ingen spårning mellan appar eller webbplatser.</strong> Vi frågar aldrig om position i bakgrunden.</li>
 <li>Du kan hämta ut all din data och ta bort ditt konto direkt i appen, under Inställningar.</li>
@@ -52,7 +52,7 @@
 <p><strong>Om du bara tittar.</strong> Inget konto behövs. Vi lagrar ingen profil om dig. Kartan hämtar kartrutor från OpenFreeMap, som då ser din IP-adress och vilket område du tittar på. Vill appen visa spår nära dig frågar den om position — du kan säga nej och ändå använda kartan.</p>
 <p><strong>Konto.</strong> Inloggning är anonym som standard: du får ett slumpmässigt konto-id utan namn eller e-post. Väljer du att registrera dig med e-post och lösenord sparar Firebase Authentication din e-postadress, ett lösenordshash och tidpunkter för när kontot skapades och senast användes. Vi ser aldrig ditt lösenord.</p>
 <p><strong>Profil.</strong> Ett visningsnamn (standard: &quot;Skier&quot;), eventuellt en profilbild och en valfri hemregion. <strong>Profiler är läsbara för alla</strong>, eftersom flödet visar vem som lagt upp vad. Detsamma gäller vilka du följer och vilka turer du gett applåder.</p>
-<p><strong>Turer du loggar.</strong> Starttid och sluttid, sträcka, tid, teknik (klassisk eller skate), valfri titel och kommentar, och det inspelade spåret som en kodad linje. Spåret klipps med ca 200 m i varje ände innan det sparas. Sträcka och tid räknas ut på hela turen, så siffrorna påverkas inte. Blir det inget kvar efter klippningen sparas ingen tur alls. Du väljer synlighet vid sparandet — privat är standard och står först i listan.</p>
+<p><strong>Turer du loggar.</strong> Starttid och sluttid, sträcka, tid, teknik (klassisk eller skate), valfri titel och kommentar, och det inspelade spåret som en kodad linje. Spåret klipps enligt din skyddszon innan det sparas, som standard ca 200 m i varje ände. Sträcka och tid räknas ut på hela turen, så siffrorna påverkas inte. Blir det inget kvar efter klippningen sparas ingen tur alls. Du väljer synlighet vid sparandet — privat är standard och står först i listan.</p>
 <p><strong>Spårrapporter.</strong> Vilket spår och vilken sträcka rapporten gäller, ditt konto-id, om du har en verifierad roll (spårvärd eller klubbadmin), tidpunkt, förhållanden, spårning, snödjup, temperatur och en valfri notering. Har du gett appen tillgång till position läggs en avrundad position till (ca 100 m). Rapporter är publika, för att de är hela poängen med tjänsten, och de <strong>kan inte ändras i efterhand</strong> — en rättelse är en ny rapport. Du kan däremot ta bort din egen rapport.</p>
 <p><strong>Kommentarer och applåder.</strong> Ditt konto-id, tidpunkt och texten du skrev. Kommentarer och applåder syns för samma personer som får se turen de hör till. Kommentarer kan inte redigeras, bara tas bort.</p>
 <p><strong>Spårvärdar.</strong> Uppdaterar du en sträckas status som verifierad spårvärd sparas ditt konto-id tillsammans med tidpunkten på den sträckan, publikt. Det är så andra skidåkare kan se att uppgiften kommer från någon med ansvar för spåret.</p>
@@ -122,7 +122,7 @@
 <ul>
 <li>You can browse trails and conditions <strong>without an account</strong>. We store nothing about you then.</li>
 <li>If you record a session it is saved as <strong>private</strong> by default. You choose private, followers or public when you save it.</li>
-<li>Roughly <strong>200 m is trimmed from both ends of every recorded GPS track before it is stored</strong>, so a track never begins or ends at your exact location. This happens always, including for private sessions.</li>
+<li>By default, roughly <strong>200 m is trimmed from both ends of every recorded GPS track before it is stored</strong>, so a track neither begins nor ends at your exact location. You choose the distance yourself in Settings (off, 200, 500 or 1000 m), and your choice applies the same way to private and public sessions. If you switch the zone off, the track is stored exactly as recorded.</li>
 <li><strong>Condition reports are public and cannot be edited afterwards.</strong> Any location attached to one is rounded to about 100 m.</li>
 <li><strong>No advertising, no analytics SDK, no tracking across apps or websites.</strong> We never ask for background location.</li>
 <li>You can export all your data and delete your account from inside the app, under Settings.</li>
@@ -136,7 +136,7 @@
 <p><strong>If you only browse.</strong> No account needed. We store no profile for you. The map fetches tiles from OpenFreeMap, which therefore sees your IP address and the area you are looking at. To show trails near you the app asks for location — you can say no and still use the map.</p>
 <p><strong>Account.</strong> Sign-in is anonymous by default: you get a random account id with no name and no email. If you choose to register with email and password, Firebase Authentication stores your email address, a password hash and the times the account was created and last used. We never see your password.</p>
 <p><strong>Profile.</strong> A display name (default: &quot;Skier&quot;), an optional photo and an optional home region. <strong>Profiles are readable by anyone</strong>, because the feed shows who posted what. The same is true of who you follow and which sessions you applauded.</p>
-<p><strong>Sessions you record.</strong> Start and end time, distance, duration, technique (classic or skate), an optional title and note, and the recorded track as an encoded line. About 200 m is trimmed from each end before storage. Distance and duration are computed from the whole session, so the numbers stay correct. If nothing is left after trimming, no session is saved at all. You pick the visibility when saving — private is the default and comes first in the list.</p>
+<p><strong>Sessions you record.</strong> Start and end time, distance, duration, technique (classic or skate), an optional title and note, and the recorded track as an encoded line. The track is trimmed according to your privacy zone before storage, by default about 200 m at each end. Distance and duration are computed from the whole session, so the numbers stay correct. If nothing is left after trimming, no session is saved at all. You pick the visibility when saving — private is the default and comes first in the list.</p>
 <p><strong>Condition reports.</strong> Which trail and which stretch the report is about, your account id, whether you hold a verified role (groomer or club admin), the time, the conditions, grooming state, snow depth, temperature and an optional note. If you have given the app location access, a rounded position (about 100 m) is added. Reports are public, because that is the point of the service, and they <strong>cannot be changed afterwards</strong> — a correction is a new report. You can delete your own report.</p>
 <p><strong>Comments and applause.</strong> Your account id, the time and the text you wrote. They are visible to the same people who can see the session they belong to. Comments cannot be edited, only deleted.</p>
 <p><strong>Groomers.</strong> If you update a stretch&#x27;s status as a verified groomer, your account id is stored publicly on that stretch along with the timestamp. That is how other skiers can tell the update came from someone responsible for the trail.</p>
